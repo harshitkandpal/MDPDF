@@ -8,4 +8,4 @@ apt-get update && apt-get install -y \
 
 pip install -r requirements.txt
 
-playwright install chromium
+playwright install --with-deps chromium
