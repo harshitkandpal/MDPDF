@@ -154,7 +154,7 @@ class MDPDF:
         html_path.write_text(html_str, encoding="utf-8")
 
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            browser = p.chromium.launch(args=["--no-sandbox"])
             page = browser.new_page()
             page.goto(html_path.as_uri(), wait_until="networkidle")
 
