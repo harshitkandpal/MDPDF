@@ -27,10 +27,7 @@ SECRET_KEY = "django-insecure-d93&9-d-92%5nt^w(nhm08uyv5c2c(oua8e$^4nr^5w6zsv5t2
 DEBUG = False
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = [
-    "mdpdf-ten.vercel.app",
-    ".vercel.app",
-]
+ALLOWED_HOSTS = ["mdpdf-ten.vercel.app", ".vercel.app", "mdpdf.onrender.com"]
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
