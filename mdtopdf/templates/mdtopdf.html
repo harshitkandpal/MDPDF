@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Markdown</title>
+</head>
+<body>
+
+<h1>Markdown to PDF</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <label>File Name:</label><br>
+    <input type="text" name="filename" placeholder="my_document"><br><br>
+
+    <label>Theme:</label><br>
+    <select name="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select><br><br>
+
+    <label>Paste Markdown:</label><br>
+    <textarea name="markdown" rows="20" cols="80" placeholder="# Write markdown here..."></textarea><br><br>
+
+    <button type="submit">Convert to PDF</button>
+</form>
+
+</body>
+</html>
